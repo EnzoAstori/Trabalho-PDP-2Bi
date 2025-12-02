@@ -1,0 +1,14 @@
+1- Após baixar o Docker Desktop abrimos um Contêiner contendo o EMQX e rodamos, configuramos a porta do Host fizemos o login no mesmo.
+
+http://localhost:18083
+usuário:admin
+senha:Lasanha1
+
+2- Ao abrir o dashboard do EMQX, minimizamos e abrimos 3 CMD's.
+
+3- Colocamos o endereço do diretório da pasta principal nas 3 janelas, por fim, executamos esse comando nas 3 janelas (tempo de 3 segundos de uma execução de uma janela para a outra).
+
+python Mine.py --broker localhost --port 8883 --participants 3 --tls_insecure
+
+
+
